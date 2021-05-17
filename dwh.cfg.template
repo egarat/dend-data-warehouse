@@ -1,0 +1,28 @@
+[AWS]
+# This is only required to run the notebook otherwise leave the values empty.
+KEY=<IAM_USER_KEY>
+SECRET=<IAM_USER_SECRET>
+
+[CLUSTER]
+DB_CLUSTER_IDENTIFIER=myredshiftcluster
+DB_CLUSTER_TYPE=single-node
+# If DB_CLUSTER_TYPE='multi-node', specify DB_NUM_NODES
+DB_NUM_NODES=1
+DB_NODE_TYPE=dc2.large
+DB_NAME=dev
+DB_USER=awsuser
+DB_PASSWORD=Passw0rd
+DB_PORT=5439
+# Change if a new cluster has been created
+HOST=<REDSHIFT_ENDPOINT>
+
+[IAM_ROLE]
+IAM_ROLE_NAME=myRedshiftRole
+# Change if a new cluster has been created
+IAM_ROLE_ARN=<REDSHIFT_ROLE_ARN>
+
+[S3]
+BUCKET_REGION=us-west-2
+LOG_DATA='s3://udacity-dend/log_data'
+LOG_JSONPATH='s3://udacity-dend/log_json_path.json'
+SONG_DATA='s3://udacity-dend/song_data'
