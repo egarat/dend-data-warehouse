@@ -165,7 +165,7 @@ LIMIT 5;
 Output:
 
 user_id | first_name | last_name | level | songplays | sessions
----: | ---: | ---: | ---: | ---: | ---:
+---: | :--- | :--- | :--- | ---: | ---:
 49 | Chloe | Cuevas | paid | 42 | 21 
 97 | Kate | Harrell | paid | 32 | 11 
 80 | Tegan | Levine | paid | 31 | 17 
@@ -190,7 +190,7 @@ LIMIT 5;
 Output
 
 song_title | artist_name | songplays
----: | ---: | ---:
+:--- | :--- | ---:
 You're The One | Dwight Yoakam | 37
 Catch You Baby (Steve Pitron & Max Sanna Radio Edit) | Lonnie Gordon | 9
 I CAN'T GET STARTED | Ron Carter | 9
